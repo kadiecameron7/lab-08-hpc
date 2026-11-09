@@ -1,0 +1,5 @@
+INFO Task 1: /sfs/weka/scratch/scn7fw/books/pg1013.txt
+INFO Running Qwen/Qwen2.5-1.5B-Instruct on cuda
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:  44%|████▍     | 150/338 [00:00<00:00, 202.23it/s]Loading weights:  76%|███████▌  | 257/338 [00:00<00:00, 280.88it/s]Loading weights:  87%|████████▋ | 293/338 [00:01<00:00, 290.22it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 311.47it/s]
+INFO pg1013.txt: genre science fiction, 7.8 s
+Summarized pg1013.txt in 7.8 s on udc-aw37-1

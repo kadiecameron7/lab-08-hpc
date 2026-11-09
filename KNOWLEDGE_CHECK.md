@@ -12,8 +12,7 @@ Redirect the command's output to `results/job-history.txt` and include the file 
 
 **Your answer:** Provide the entire command you used, including all CLI options.
 
-...
-
+sacct --starttime=2026-11-04 -- format=JobID,JobName,NodeList,Partition,Account,User,State,Start,Elapsed > results/job-history.txt
 ## 2. Slurm: did every array task run at the same time?
 
 You submitted your entire job array with one `sbatch` command, but Slurm scheduled each task separately.
@@ -23,8 +22,7 @@ You submitted your entire job array with one `sbatch` command, but Slurm schedul
 *Hint:* See [Part 1, Step 5](README.md#step-5-watch-the-job-array) in the README.
 
 **Your answer:** Did all tasks in the array start at the same time? Was the elapsed time identical for every task? Explain why or why not.
-
-...
+No for both because some started later and each task summarizes a different book so longer ones required more time to complete.
 
 ## 3. Slurm: did my job use what it asked for?
 
@@ -36,5 +34,5 @@ Suppose your next job array has 1,000 books instead of 101. Before you submit it
 
 **Your answer:** How much memory and time did the task use, compared with what your script asked for? What would you change in your script, and why?
 
-...
+Task 1 used 1.69 FB and finished in 20 seconds. For 1000 books, I would lower --mem and decrease --time. This gives a higher chance for longer books while letting slurm schedule tasks and use less resources.
 
